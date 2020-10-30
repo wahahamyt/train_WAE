@@ -6,7 +6,7 @@ import cv2
 
 class Preprocessor(object):
     def __init__(self):
-        self.dset_dir = '/media/x/工作/datasets/ILSVRC2015/Data/VID'
+        self.dset_dir = '/media/x/datasets/ILSVRC2015/Data/VID'
         self.imsz = 64
 
         dataset_train = datasets.ImageFolder(
@@ -30,11 +30,11 @@ class Preprocessor(object):
             img = cv2.imread(self.imgs[i][0])
             img = cv2.resize(img,(self.imsz, self.imsz))
             if i % seg == 0:
-                if ~os.path.exists('/media/x/工作/datasets/ILSVRC2015_64/{}'.format(seg_indx)):
-                    os.mkdir('/media/x/工作/datasets/ILSVRC2015_64/{}'.format(seg_indx))
+                if ~os.path.exists('/media/x/datasets/ILSVRC2015_64/{}'.format(seg_indx)):
+                    os.mkdir('/media/x/datasets/ILSVRC2015_64/{}'.format(seg_indx))
                 seg_indx = seg_indx + 1
 
-            cv2.imwrite('/media/x/工作/datasets/ILSVRC2015_64/{0}/{1}.JPEG'.format(seg_indx-1, i), img)
+            cv2.imwrite('/media/x/datasets/ILSVRC2015_64/{0}/{1}.JPEG'.format(seg_indx-1, i), img)
             print('{0}/{1}\n'.format(i, len(self.imgs)))
 
 if __name__ == '__main__':
