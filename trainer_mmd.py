@@ -94,7 +94,7 @@ class Trainer(object):
                 # iteration = 0
                 # while data is not None:
                 #     iteration += 1
-                #     # 训练代码
+                #     # Training Code Here
                 #     data, label = prefetcher.next()
                     pbar.update(1)
                     self.global_iter += 1
