@@ -44,8 +44,8 @@ if __name__ == "__main__":
     parser.add_argument('--beta1', default=0.5, type=float, help='Adam optimizer beta1')
     parser.add_argument('--beta2', default=0.999, type=float, help='Adam optimizer beta2')
 
-    # parser.add_argument('--dset_dir', default='/media/x/工作/datasets/ILSVRC2015/Data/VID', type=str, help='dataset directory')
-    parser.add_argument('--dset_dir', default='/media/x/工作/datasets/ILSVRC2015_64/', type=str, help='dataset directory')
+    # parser.add_argument('--dset_dir', default='/media/x/datasets/ILSVRC2015/Data/VID', type=str, help='dataset directory')
+    parser.add_argument('--dset_dir', default='/media/x/datasets/ILSVRC2015_64/', type=str, help='dataset directory')
     parser.add_argument('--dataset', default='imagenet', type=str, help='dataset name')
 
     parser.add_argument('--viz_on', default=True, type=str2bool, help='enable visdom visualization')
