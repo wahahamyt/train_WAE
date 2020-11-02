@@ -1,6 +1,8 @@
 # train Wasserstein distance-based auto-encoder
 
 The WAE is trained under the ImageNet(ILSVRC2015)
+
+## Results
 ![image](https://github.com/wahahamyt/train_WAE/blob/main/demo.jpg)
 
 ## Step 1
